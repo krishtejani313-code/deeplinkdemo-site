@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Link Demo</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        a { color: #2196F3; }
+    </style>
+</head>
+<body>
+    <h2>📱 એપ ખુલી રહી છે...</h2>
+    <p>જો એપ ના ખુલે તો <a href="https://play.google.com/store/apps/details?id=com.mohdeva.deeplinkdemo">અહીં ક્લિક કરો</a></p>
+    
+    <script>
+        // એપ ખોલવાનો પ્રયત્ન
+        window.location.href = "intent://open?name=Mohit&id=123&city=Ahmedabad#Intent;" +
+            "scheme=deeplinkdemo;" +
+            "package=com.mohdeva.deeplinkdemo;" +
+            "S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.mohdeva.deeplinkdemo;" +
+            "end";
+    </script>
+</body>
+</html>
